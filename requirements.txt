@@ -3,6 +3,6 @@ dash
 pandas
 numpy
 plotly
-json==19.2
-requests==2.24.0
-urllib==20.5
+json==2.0.9
+requests==2.23.0
+urllib
