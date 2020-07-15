@@ -1,6 +1,5 @@
 scikit-learn==0.20
 dash
-os
 pandas
 numpy
 plotly
