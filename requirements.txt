@@ -4,5 +4,5 @@ pandas
 numpy
 plotly
 json==19.2
-requests=2.24.0
-urllib=20.5
+requests==2.24.0
+urllib==20.5
