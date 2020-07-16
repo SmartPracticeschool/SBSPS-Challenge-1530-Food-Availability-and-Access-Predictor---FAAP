@@ -95,3 +95,7 @@ People are dependent on markets for buying food and hence more vulnerable to pri
 ![tab 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab2charts.png)
 ![tab 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab2malnutrition.png)
 
+
+## LINK OF VIDEO EXPLANING THE WORKING OF THE APPLICATION
+https://drive.google.com/file/d/1WdYbS84clgk52u7Du3opI97uvdrQXG_u/view?usp=sharing
+
