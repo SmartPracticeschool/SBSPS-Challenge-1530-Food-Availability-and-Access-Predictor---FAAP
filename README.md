@@ -43,14 +43,14 @@ People are dependent on markets for buying food and hence more vulnerable to pri
 ![Design Process](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/design.png)
 
 ## Packages 
-**Pandas:** -Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
-**NumPy:** -NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
-**Scikit Learn:** -Scikit-learn is a free machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbors, and it also supports Python numerical and scientific libraries like NumPy and SciPy.
-**Dash:** -Dash is an open-source Python framework used for building analytical web applications. It is a powerful library that simplifies the development of data-driven applications.
-**Requests:** -Requests is a Python HTTP library, released under the Apache License 2.0. The goal of the project is to make HTTP requests simpler and more human-friendly.
-**Urllib:** -Urllib module is the URL handling module for python. It is used to fetch URLs. It uses the url open function and is able to fetch URLs using a variety of different protocols.
-**Plotly:** -Plotly allows users to import, copy and paste, or stream data to be analyzed and visualized. For analysis and styling graphs, Plotly offers a Python sandbox, data grid, and GUI. Python scripts can be saved, shared, and collaboratively edited in Plotly.
-**JSON:** -The json library can parse JSON from strings or file. The library parses JSON into a Python dictionary or list. It can also convert Python dictionaries or lists into JSON strings.
+**Pandas:** -Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.<br/>
+**NumPy:** -NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.<br/>
+**Scikit Learn:** -Scikit-learn is a free machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbors, and it also supports Python numerical and scientific libraries like NumPy and SciPy.<br/>
+**Dash:** -Dash is an open-source Python framework used for building analytical web applications. It is a powerful library that simplifies the development of data-driven applications.<br/>
+**Requests:** -Requests is a Python HTTP library, released under the Apache License 2.0. The goal of the project is to make HTTP requests simpler and more human-friendly.<br/>
+**Urllib:** -Urllib module is the URL handling module for python. It is used to fetch URLs. It uses the url open function and is able to fetch URLs using a variety of different protocols.<br/>
+**Plotly:** -Plotly allows users to import, copy and paste, or stream data to be analyzed and visualized. For analysis and styling graphs, Plotly offers a Python sandbox, data grid, and GUI. Python scripts can be saved, shared, and collaboratively edited in Plotly.<br/>
+**JSON:** -The json library can parse JSON from strings or file. The library parses JSON into a Python dictionary or list. It can also convert Python dictionaries or lists into JSON strings.<br/>
 
 ## Technology Stack
 * **Programming Languages: Python**
