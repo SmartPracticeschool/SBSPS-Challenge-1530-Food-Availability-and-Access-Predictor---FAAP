@@ -40,6 +40,6 @@ People are dependent on markets for buying food and hence more vulnerable to pri
 
 ## Design Process
 
-![Design Process](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/jsondata.png)
+![Design Process](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/design.png)
 
 
