@@ -8,3 +8,4 @@ The main purpose of the model is to predict the demand and supply gap of the spe
 People are dependent on markets for buying food and hence more vulnerable to price fluctuations and potential availability of the commodity. A sudden and sharp increase in prices of essential commodities will have a major effect on food security. Our model helps to understand food security problem and how it is even got worst with COVID-19 pandemic (crises within the crises)
 
 ## Architecture
+![alt text]('/images/architecture.png)
