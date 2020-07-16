@@ -37,3 +37,9 @@ People are dependent on markets for buying food and hence more vulnerable to pri
 * The gap between demand and supply is represented by a graph and the Indian map is generated based on the demand of the selected crop which is indicated by color range.
 * Users can also visualize malnutrition in India based on the year and other important attributes like underweight, stunting, wasting, and income level.
 * User can also see the suggestion that which crop needed to import or export from other states based on demand.
+
+## Design Process
+
+![Design Process](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/jsondata.png)
+
+
