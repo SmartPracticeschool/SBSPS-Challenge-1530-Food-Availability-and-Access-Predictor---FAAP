@@ -1,4 +1,4 @@
-﻿id,Year,Malnutrition
+id,Year,Malnutrition
 Andaman and Nicobar Islands,1992,108.9
 Andaman and Nicobar Islands,2005,96.3
 Andaman and Nicobar Islands,2015,63.5
@@ -38,9 +38,9 @@ Haryana,2015,84.2
 Himachal Pradesh,1992,109.8
 Himachal Pradesh,2005,94.4
 Himachal Pradesh,2015,61.2
-Jammu & Kashmir,1992,101.9
-Jammu & Kashmir,2005,75.4
-Jammu & Kashmir,2015,55.7
+Jammu and Kashmir,1992,101.9
+Jammu and Kashmir,2005,75.4
+Jammu and Kashmir,2015,55.7
 Jharkhand,1992,109.7
 Jharkhand,2005,138.6
 Jharkhand,2015,121.8
@@ -53,9 +53,9 @@ Kerala,2015,50.8
 Madhya Pradesh,1992,126.2
 Madhya Pradesh,2005,145
 Madhya Pradesh,2015,110.6
-Maharashtra,1992,128.8
-Maharashtra,2005,99.3
-Maharashtra,2015,95.4
+Maharastra,1992,128.8
+Maharastra,2005,99.3
+Maharastra,2015,95.4
 Manipur,1992,74.3
 Manipur,2005,66.2
 Manipur,2015,48.6
