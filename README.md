@@ -72,9 +72,9 @@ People are dependent on markets for buying food and hence more vulnerable to pri
 * A "Demand-Supply Gap" graph is also rendered as the output which contains values of demand and supply for 2 consecutive years along with users's entered year.
 * A Gauge Meter referring to "Risk of Food Insecurity" is rendered as output. Risk - 0 (supply greater than demand), Risk - 50 (approximately supply is equal to demand), Risk - 100 (demand is greater than supply).
 * A Model Suggestion stating whether to import or export the commodity is also rendered.
-#### Tab - 1 Home page
+### Tab - 1 Home page
 ![tab 1](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab1.png)
-#### Tab - 2 Home page Output
+### Tab - 1 Home page Output
 ![tab 1](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab1output.png)
 ### Malnutrition Dashboard
 * This tab has 4 visuliazation options.
@@ -85,7 +85,7 @@ People are dependent on markets for buying food and hence more vulnerable to pri
 * Line chart provides user an option of comparsion of values between different states.
 * The third visualization is a Donut chart which refers to the intensity of "Stunting"/ "Underweight"/"Wasting" on selected states.
 * The fourth visualization is the bar graph which refers to the " Impact of Income level on Malnutrition".
-#### Tab - 2 Output
+### Tab - 2 Output
 ![tab 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab2map.png)
 ![tab 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab2charts.png)
 ![tab 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab2malnutrition.png)
