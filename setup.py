@@ -5,7 +5,7 @@ from os import path
 here = path.abspath( path.dirname( __file__ ) )
 
 setup(
-    name='app-name',
+    name='faap',
     version='1.0.0',
     description='Food Access and Availability Predictor using IBM Watson',
     license='Apache-2.0'
