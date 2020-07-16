@@ -11,7 +11,7 @@ People are dependent on markets for buying food and hence more vulnerable to pri
 ![Architecture of Application](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/architecture.png)
 
 ## Data 
-* ** Json data used for a rendering map. It consists of coordinates of states and state boundaries of India. **
+* **Json data used for a rendering map. It consists of coordinates of states and state boundaries of India.**
 ![Json data 1](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/jsondata.png)
 
 ![Json data 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/jsondata1.png)
