@@ -15,6 +15,11 @@ People are dependent on markets for buying food and hence more vulnerable to pri
 ![Json data 1](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/jsondata.png)
 
 ![Json data 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/jsondata1.png)
+
+### Crop Yield Data
+![cropdata](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/cropdata.png)
+### Demand Data
+![demanddata](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/demanddata.png)
 ## Modules
 * Entire application consists of 3 modules
 * **Crop yield model**
