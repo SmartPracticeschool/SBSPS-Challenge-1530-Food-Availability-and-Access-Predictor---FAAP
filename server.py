@@ -334,7 +334,6 @@ def crop_model_access(access_token,n_clicks,istate_val,iyear_val,icrop_val,iarea
     call_headers = {'Content-Type': 'application/json',"Authorization":"Bearer "+access_token,"ML-Instance-ID":instance_id}
     for state in state_boundary:
         encoded_crop_data = encodingdata.encode_crop_data(n_clicks,state,iyear_val,icrop_val,iarea_val)
-        print(encoded_crop_data)
         cstate = float(encoded_crop_data[0][0])
         cyear = float(encoded_crop_data[0][1])
         ccrop = float(encoded_crop_data[0][2])
@@ -350,7 +349,6 @@ def crop_model_access(access_token,n_clicks,istate_val,iyear_val,icrop_val,iarea
 
     for i in range(0,3):
         encoded_crop_data = encodingdata.encode_crop_data(n_clicks,istate_val,iyear_val,icrop_val,iarea_val)
-        print(encoded_crop_data)
         cstate = float(encoded_crop_data[0][0])
         cyear = float(encoded_crop_data[0][1])
         ccrop = float(encoded_crop_data[0][2])
