@@ -59,4 +59,33 @@ People are dependent on markets for buying food and hence more vulnerable to pri
 * **Server Type: REST API Post**
 * **Machine Learning Models Used: Deep Neural Network**
 
+## Result 
+* The application contains 2 tabs :
+  * Demand and Supply Gap Predicotr
+  * Malnutrition Dashboard
+### Demand and Supply Gap Predictor
+* The user has to enter 4 inputs : 'State', 'Crop', 'Year' and 'Crop area which is under yield'.
+* The first 3 inputs are same for both the modules (crop yield and crop demand) and the fourth input is considered by the Crop yield module.
+* The inpust State,Crop,Year are sent to the module and demand for that particular corp is obtained
+* Similarly State, Crop, Year, Area are sent to the crop yield module and yield of that crop is estimated.
+* Based on the results, a India map containing all the states is rendered as  the output.
+* A "Demand-Supply Gap" graph is also rendered as the output which contains values of demand and supply for 2 consecutive years along with users's entered year.
+* A Gauge Meter referring to "Risk of Food Insecurity" is rendered as output. Risk - 0 (supply greater than demand), Risk - 50 (approximately supply is equal to demand), Risk - 100 (demand is greater than supply).
+* A Model Suggestion stating whether to import or export the commodity is also rendered.
+#### Tab - 1 Output
+![tab 1](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab1.png)
+![tab 1](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab1output.png)
+### Malnutrition Dashboard
+* This tab has 4 visuliazation options.
+* The first among thosse is a India map which represents the overall Malnutrition with repect to the states of India.
+* User has the option to interact with India map by changing the year (input).
+* A choropleth map is rendered as output determining the malnutrition levels.
+* The Second visualization is a Line chart which refers to the values of "Stunting", "Underweight", "Wasting" of selcted state/states. 
+* Line chart provides user an option of comparsion of values between different states.
+* The third visualization is a Donut chart which refers to the intensity of "Stunting"/ "Underweight"/"Wasting" on selected states.
+* The fourth visualization is the bar graph which refers to the " Impact of Income level on Malnutrition".
+#### Tab - 2 Output
+![tab 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab2map.png)
+![tab 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab2charts.png)
+![tab 2](https://github.com/SmartPracticeschool/SBSPS-Challenge-1530-Food-Availability-and-Access-Predictor---FAAP/blob/master/images/tab2malnutrition.png)
 
