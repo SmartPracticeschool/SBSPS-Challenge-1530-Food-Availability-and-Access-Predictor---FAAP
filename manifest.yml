@@ -1,4 +1,4 @@
 applications:
-- name: GetStartedPython
+- name: faap
   random-route: true
   memory: 128M
