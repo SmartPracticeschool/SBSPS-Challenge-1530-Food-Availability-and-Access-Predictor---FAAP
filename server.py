@@ -389,12 +389,12 @@ def defining_stateboundaries():
         state_boundaries['Maharastra'] = ['Karnataka','Madhya Pradesh','Goa','Andhra Pradesh','Chhattisgarh','Gujarat']
         state_boundaries['Goa'] = ['Karnataka','Maharastra','Kerala','Andhra Pradesh','Tamil Nadu']
         state_boundaries['Andhra Pradesh'] = ['Karnataka','Maharastra','Tamil Nadu','Odisha','Chhattisgarh']
-        state_boundaries['Gujarat'] = ['Rajasthan','Madhya Pradesh','Maharastra','Uttar Pradesh','Harayana']
+        state_boundaries['Gujarat'] = ['Rajasthan','Madhya Pradesh','Maharastra','Uttar Pradesh','Haryana']
         state_boundaries['Madhya Pradesh'] = ['Maharastra','Rajasthan','Uttar Pradesh','Chhattisgarh','Gujarat']
         state_boundaries['Chhattisgarh'] = ['Odisha','Jharkhand','Madhya Pradesh','Maharastra','Uttar Pradesh']
         state_boundaries['Odisha'] = ['Chhattisgarh','Jharkhand','West Bengal','Andhra Pradesh','Maharastra']
         state_boundaries['Rajasthan'] = ['Gujarat','Madhya Pradesh','Uttar Pradesh','Haryana','Punjab']
-        state_boundaries['Uttar Pradesh'] = ['Madhya Pradesh','Rajasthan','Bihar','Haryana','Uttarkhand','Chhattisgarh']
+        state_boundaries['Uttar Pradesh'] = ['Madhya Pradesh','Rajasthan','Bihar','Haryana','Uttarakhand','Chhattisgarh']
         state_boundaries['Bihar'] = ['Uttar Pradesh','Jharkhand','Sikkim','Madhya Pradesh','West Bengal','Chhattisgarh']
         state_boundaries['Jharkhand'] = ['Bihar','West Bengal','Odisha','Chhattisgarh','Uttar Pradesh']
         state_boundaries['West Bengal'] = ['Jharkhand','Odisha','Bihar','Sikkim','Assam']
@@ -404,7 +404,7 @@ def defining_stateboundaries():
         state_boundaries['Jammu and Kashmir'] = ['Himachal Pradesh','Punjab','Uttarakhand','Haryana','Uttar Pradesh','Rajasthan']
         state_boundaries['Uttarakhand'] = ['Uttar Pradesh','Himachal Pradesh','Haryana','Punjab','Rajasthan','Jammu and Kashmir']
         state_boundaries['Sikkim'] = ['West Bengal','Assam','Bihar','Meghalaya','Jharkhand']
-        state_boundaries['Assam'] = ['Meghalaya','Nagaland','Arunachal Pradesh','West bengal','Manipur','Mizoram']
+        state_boundaries['Assam'] = ['Meghalaya','Nagaland','Arunachal Pradesh','West Bengal','Manipur','Mizoram']
         state_boundaries['Arunachal Pradesh'] = ['Assam','Nagaland','Manipur','Meghalaya','Mizoram','Tripura']
         state_boundaries['Meghalaya'] = ['Assam','West Bengal','Tripura','Mizoram','Manipur','Nagaland']
         state_boundaries['Nagaland'] = ['Assam','Manipur','Arunachal Pradesh','Meghalaya','Mizoram']
@@ -415,15 +415,15 @@ def defining_stateboundaries():
         state_boundaries['Dadra and Nagar Haveli'] = ['Gujarat','Maharastra','Madhya Pradesh','Rajasthan','Goa']
         state_boundaries['Puducherry'] = ['Tamil Nadu','Andhra Pradesh','Kerala','Karnataka','Odisha']
         state_boundaries['Andaman and Nicobar Islands'] = ['Andhra Pradesh','Tamil Nadu','Odisha','Kerala','West Bengal']
-        state_boundaries['Chandigarh'] = ['Punjab','Harayana','Himachal Pradesh','Uttarakhand','Uttar Pradesh']
+        state_boundaries['Chandigarh'] = ['Punjab','Haryana','Himachal Pradesh','Uttarakhand','Uttar Pradesh']
 
         return indian_states,state_boundaries
 
 
 #page 1 - Home page
 @app.callback(
-    [
-    Output(component_id='country_map',component_property='figure'),
+    
+    [Output(component_id='country_map',component_property='figure'),
     Output('demandsupply','figure'),
     Output(component_id='foodinsecurity',component_property='figure'),
     Output('riskoutput','children')],
@@ -540,24 +540,57 @@ def update_output(n_clicks,istate_val,icrop_val,iyear_val,iarea_val):
 
         #states_map = states
         import_to = []
+        import_from = []
+        demand_list = [0] * len(states)
+
         if suggestion == 1:
+            print("enters the I and E part")
             for i in range(0,len(export_import_condition)):
                 if export_import_condition[i] == -1:
                     import_to.append(i)
 
-        value_to_state = []
-        for i in range(0,len(import_to)):
-            value_to_state.append(state_list[import_to[i]])
+            value_to_state = []
+            for i in range(0,len(import_to)):
+                value_to_state.append(state_list[import_to[i]])
+            print("STSTAE NAMES")
+            print(value_to_state)
 
-        index_of_boundary_states =[]
-        index_of_input_state = states.index(istate_val)
-        for state in value_to_state:
-            index_of_boundary_states.append(states.index(state))
+            index_of_boundary_states =[]
+            index_of_input_state = states.index(istate_val)
+            for state in value_to_state:
+                index_of_boundary_states.append(states.index(state))
 
-        demand_list = [0] * len(states)
-        demand_list[index_of_input_state] = suggestion
-        for i in range(0,len(index_of_boundary_states)):
-            demand_list[index_of_boundary_states[i]] = -1
+        
+            demand_list[index_of_input_state] = suggestion
+            for i in range(0,len(index_of_boundary_states)):
+                demand_list[index_of_boundary_states[i]] = -1
+            print("\n\n DEMAND LIST")
+            print(demand_list)
+        elif suggestion== -1:
+            print("entered the suggestion negative value")
+            for i in range(0,len(export_import_condition)):
+                if export_import_condition[i] == 1:
+                    import_from.append(i)
+
+            value_to_state = []
+            for i in range(0,len(import_from)):
+                value_to_state.append(state_list[import_from[i]])
+            print("STSTAE NAMES")
+            print(value_to_state)
+
+            index_of_boundary_states =[]
+            index_of_input_state = states.index(istate_val)
+            for state in value_to_state:
+                index_of_boundary_states.append(states.index(state))
+
+        
+            demand_list[index_of_input_state] = suggestion
+            for i in range(0,len(index_of_boundary_states)):
+    
+                demand_list[index_of_boundary_states[i]] = 1
+            print("\n\n DEMAND LIST")
+            print(demand_list)
+
 
         df = pd.DataFrame({'id':states,'Demand':demand_list})
 
@@ -580,6 +613,7 @@ def update_output(n_clicks,istate_val,icrop_val,iyear_val,iarea_val):
         data1 = pd.DataFrame({'Year':[iyear_org,iyear_org+1,iyear_org+2],'Demand':[total_demand[0],total_demand[1],total_demand[2]],
                     'Supply':[total_cropyield[0],total_cropyield[1],total_cropyield[2]]})
         
+        fig1 = go.Figure()
 
         fig1.add_trace(go.Scatter(x=data1['Year'],y=data1['Demand'],
                          mode='lines+text',name='Demand',
@@ -606,7 +640,8 @@ def update_output(n_clicks,istate_val,icrop_val,iyear_val,iarea_val):
                              line=dict(color='firebrick',dash='dash')))
         print('executed - 1')
         fig1.update_xaxes(type='category')
-        fig1.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+        #fig1.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+        fig1.update_layout(uirevision='foo')
 
         # Gauge Creation
         fig2 = go.Figure(go.Indicator(
@@ -735,7 +770,7 @@ def update_data(chosen_rows,piedropval,linedropval,option_slctd):
             'yanchor': 'top'})
     line_chart.update_layout(
             title={
-            'text': "Year wise Trends of {}".format(piedropval),
+            'text': "Year wise Trends of {}".format(linedropval),
             'y':0.95,
             'x':0.47,
             'xanchor': 'center',
